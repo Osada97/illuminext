@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Illumiext</title>
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/media/index.css" />
     <script
       src="https://kit.fontawesome.com/4f6c585cf2.js"
       crossorigin="anonymous"
@@ -41,6 +42,19 @@
                 </li>
               </a>
             </ul>
+          </div>
+          <div class="mobmenu">
+            <button id="bars">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="conte ncc" id="conte">
+              <ul>
+                <a href="/index.html"><li class="activate">Home</li></a>
+                <a href="/about.html"><li>About</li></a>
+                <a href="/contact.html"><li>Contact</li></a>
+                <a href="/services.html"><li>Services</li></a>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -447,28 +461,7 @@
       </div>
     </footer>
 
-    <script>
-      let countercolumn = document.querySelectorAll(".counter .main .column");
-
-      let cou = 0;
-
-      const count = () => {
-        cou++;
-        if (countercolumn[0].dataset.count >= cou) {
-          countercolumn[0].children[0].innerHTML = cou;
-        }
-        if (countercolumn[1].dataset.count >= cou) {
-          countercolumn[1].children[0].innerHTML = cou;
-        }
-        if (countercolumn[2].dataset.count >= cou) {
-          countercolumn[2].children[0].innerHTML = cou;
-        }
-        if (countercolumn[3].dataset.count >= cou) {
-          countercolumn[3].children[0].innerHTML = cou;
-        }
-      };
-
-      let timer = setInterval(count, 1);
-    </script>
+    <script src="./js/counter.js"></script>
+    <script src="./js/hammenu.js"></script>
   </body>
 </html>
