@@ -11,7 +11,7 @@
 }
 .hero {
   width: 100%;
-  background-image: url("../img/hero.jpg");
+  background-image: url("../img/home.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -39,6 +39,7 @@
   top: 0;
   left: 0;
   z-index: 2;
+  background-color: #f2f2f2;
 }
 .hero nav .main {
   width: 1200px;
@@ -47,7 +48,7 @@
   align-items: center;
 }
 .hero nav .main .logo img {
-  width: 170px;
+  width: 100px;
 }
 .hero nav .main .menu ul {
   display: flex;
@@ -68,7 +69,7 @@
 }
 .hero nav .main .menu ul a {
   text-decoration: none;
-  color: #eee;
+  color: #000;
   font-family: var(--main-font);
 }
 .hero nav .main .menu ul a:nth-child(5) li,
@@ -165,7 +166,7 @@ a:nth-child(7) li:hover {
   height: 100%;
   overflow: hidden;
   border-radius: 3px;
-  margin: -21px 0px 0px -21px;
+  margin: -30px 0px 0px -30px;
   box-shadow: 9px 9px 12px #afafaf;
 }
 .second .column .pht-frame .pht img {
@@ -189,7 +190,7 @@ a:nth-child(7) li:hover {
 .second .column h1:nth-child(1)::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -18px;
   left: 0;
   width: 100px;
   height: 5px;
@@ -508,17 +509,17 @@ a:nth-child(7) li:hover {
 .second .mainwor .ro:nth-child(1) .column:nth-child(2) .section:nth-child(1) {
   background-image: url(../img/project/pexels-cottonbro-4098224.jpg);
 }
-.second .mainwor .ro:nth-child(1) .column:nth-child(2) .section:nth-child(2) {
+.second .mainwor .ro:nth-child(1) .column:nth-child(3) .section:nth-child(1) {
   background-image: url(../img/project/pexels-cottonbro-4101143.jpg);
 }
 .second .mainwor .ro:nth-child(2) .column:nth-child(1) .section:nth-child(1) {
   background-image: url(../img/project/pexels-mentatdgt-1311518.jpg);
 }
-.second .mainwor .ro:nth-child(2) .column:nth-child(1) .section:nth-child(2) {
-  background-image: url(../img/project/pexels-mentatdgt-2173508.jpg);
-}
 .second .mainwor .ro:nth-child(2) .column:nth-child(2) .section:nth-child(1) {
   background-image: url(../img/project/pexels-the-coach-space-2977567.jpg);
+}
+.second .mainwor .ro:nth-child(2) .column:nth-child(3) .section:nth-child(1) {
+  background-image: url(../img/project/pexels-mentatdgt-2173508.jpg);
 }
 /*our team*/
 .second.nopad {
@@ -530,17 +531,20 @@ a:nth-child(7) li:hover {
 .second .fdc .team {
   display: flex;
   margin-top: 50px;
+  width: 90%;
 }
 .second .fdc .team .colu {
   flex: 1;
-  text-align: center;
-  min-height: 90vh;
+  display: flex;
+  min-height: 70vh;
 }
 .second .fdc .team .colu .teamimg {
+  flex: 0.4;
   margin-bottom: 50px;
-  height: 75%;
+  height: 100%;
   position: relative;
   box-shadow: 0px 11px 15px -2px #cacaca;
+  margin-right: 15px;
 }
 .second .fdc .team .colu .teamimg::after {
   content: "";
@@ -557,26 +561,39 @@ a:nth-child(7) li:hover {
   height: 100%;
   object-fit: cover;
 }
+.second .fdc .team .colu .cont {
+  flex: 0.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .second .fdc .team .colu .cont h1 {
-  font-size: 20px;
+  font-size: 35px;
   margin-bottom: 10px;
   font-weight: 500;
+  color: var(--main-color);
 }
 .second .fdc .team .colu .cont h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+.second .fdc .team .colu .cont p {
+  line-height: 30px;
   font-size: 15px;
-  font-weight: 300;
+  color: #777;
 }
 .second .fdc .team .colu .social {
   width: 100%;
   padding: 15px 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 .second .fdc .team .colu .social ul {
-  width: 50%;
+  width: 30%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
@@ -686,6 +703,9 @@ footer .main .column:nth-child(3) ul a:hover {
 footer .main .column img {
   width: 150px;
   margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
 }
 footer .main .column h2 {
   margin-bottom: 45px;

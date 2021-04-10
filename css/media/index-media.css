@@ -61,6 +61,16 @@
     flex: 0.8;
     margin-bottom: 8px;
   }
+  .second .fdc .team .colu {
+    flex-direction: column;
+  }
+  .second .fdc .team .colu .social ul {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+  .second .fdc .team .colu .teamimg {
+    margin-right: 0;
+  }
 }
 @media screen and (max-width: 794px) {
   nav .menu {
