@@ -72,9 +72,9 @@
   color: #000;
   font-family: var(--main-font);
 }
-.hero nav .main .menu ul a:nth-child(5) li,
-a:nth-child(6) li,
-a:nth-child(7) li {
+.hero nav .main .menu ul a:nth-child(6) li,
+a:nth-child(7) li,
+a:nth-child(8) li {
   width: 30px;
   height: 30px;
   display: flex;
@@ -82,18 +82,18 @@ a:nth-child(7) li {
   align-items: center;
   border-radius: 50%;
 }
-.hero nav .main .menu ul a:nth-child(5) li:hover,
-a:nth-child(6) li:hover,
-a:nth-child(7) li:hover {
+.hero nav .main .menu ul a:nth-child(6) li:hover,
+a:nth-child(7) li:hover,
+a:nth-child(8) li:hover {
   background-color: var(--main-color);
-}
-.hero nav .main .menu ul a:nth-child(5) li:hover {
-  color: var(--hover-txt-color-2);
 }
 .hero nav .main .menu ul a:nth-child(6) li:hover {
   color: var(--hover-txt-color-2);
 }
 .hero nav .main .menu ul a:nth-child(7) li:hover {
+  color: var(--hover-txt-color-2);
+}
+.hero nav .main .menu ul a:nth-child(8) li:hover {
   color: var(--hover-txt-color-2);
 }
 .hero .hesec {
@@ -738,7 +738,7 @@ nav .mobmenu button i {
 nav .mobmenu .conte {
   /*display: none;*/
   position: absolute;
-  bottom: -160px;
+  bottom: -227px;
   left: 0;
   background-color: #fff;
   width: 100%;
